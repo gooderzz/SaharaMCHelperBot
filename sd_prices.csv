@@ -1,0 +1,165 @@
+﻿Item,Price,Currency,Per
+Ancient Debris,5,diamonds,1
+Andesite,1,diamonds,192
+Arrow,1,diamonds,64
+Baked Potato,1,diamonds,128
+Blasting Powder,2,diamonds,64
+Bamboo,1,diamonds,320
+Banner,1,diamonds,1
+Custom Banner,2,diamonds,1
+Basalt,1,diamonds,128
+Basalt Polished,1,diamonds,64
+Beacon,64,diamonds,1
+Beetroot,1,diamonds,64
+Blackstone,3,diamonds,128
+Blackstone Polished Brick,5,diamonds,64
+Blaze Rod,4,diamonds,64
+Bookshelf,5,diamonds,15
+Bone,1,diamonds,32
+Bone Block,1,diamonds,16
+Bread,1,diamonds,32
+Cactus,1,diamonds,64
+Carrot,1,diamonds,192
+Chain,1,diamonds,32
+Coal,1,diamonds,64
+Cobblestone,1,diamonds,192
+Concrete,3,diamonds,64
+Concrete Powder,3,diamonds,128
+Cooked Chicken,1,diamonds,64
+Cooked Porkchop,1,diamonds,64
+Cooked Cod,1,diamonds,64
+Cooked Salmon,2,diamonds,64
+Cornflower,2,diamonds,64
+Crimson Stem,2,diamonds,64
+Dark Prismarine,3,diamonds,64
+Diamond Axe,2,diamonds,1
+Diamond Boots`,3,diamonds,1
+Diamond Chest Plate,3,diamonds,1
+Diamond Helmet,3,diamonds,1
+Diamond Hoe,1,diamonds,1
+Diamond Leggings,3,diamonds,1
+Diamond Pickaxe,2,diamonds,1
+Diamond Shovel,1,diamonds,1
+Diamond Sword,1,diamonds,1
+Diorite,1,diamonds,192
+Dirt Block,1,diamonds,192
+Dispenser,1,diamonds,8
+Dropper,1,diamonds,16
+Dye,1,diamonds,64
+Emerald,1,diamonds,64
+Eggs,1,diamonds,16
+Elytra,40,diamonds,1
+Enchanted book,5,diamonds,1
+Enchanted Elytra,50,diamonds,1
+Ender Chest,3,diamonds,1
+Feather,1,diamonds,32
+Diamond Enchanted Armor Set,80,diamonds,1
+Ghast Tear,8,diamonds,4
+Glass,1,diamonds,64
+Glass Pane,3,diamonds,64
+Gold Ingot,1,diamonds,16
+Golden Apple,1,diamonds,3
+Glowstone Block,9,diamonds,64
+Golden Carrot,1,diamonds,64
+Granite,1,diamonds,192
+Gravel,1,diamonds,64
+Gunpowder,3,diamonds,64
+Heart of the Sea,2,diamonds,1
+Honey Block,12,diamonds,64
+Honeycomb,2,diamonds,64
+Hopper,1,diamonds,8
+Ice,1,diamonds,192
+Blue Ice,21,diamonds,64
+Packed Ice,5,diamonds,128
+Ink Sac,2,diamonds,64
+Iron Block,8,diamonds,64
+Iron Ingot,1,diamonds,64
+Lapis Lazuli,1,diamonds,64
+Lantern,1,diamonds,32
+Leather,2,diamonds,64
+Log,2,diamonds,64
+Magma Cream,1,diamonds,64
+Full Diamond Pickaxe,22,diamonds,1
+Melon,1,diamonds,64
+Melon Slice,1,diamonds,192
+Name Tag,2,diamonds,1
+Nether Brick,1,diamonds,64
+Nether Quartz,3,diamonds,64
+Netherite Ingot,20,diamonds,1
+Netherite Scrap,5,diamonds,1
+Netherwart,1,diamonds,64
+Note Block,1,diamonds,8
+Observer,3,diamonds,32
+Obsidian,2,diamonds,32
+Phantom Membrane,2,diamonds,16
+Piston,1,diamonds,8
+Poppy,1,diamonds,64
+Potato,1,diamonds,64
+Prismarine,1,diamonds,64
+Prismarine Brick,2,diamonds,64
+Pumpkin,1,diamonds,64
+Redstone Block,1,diamonds,8
+Redstone Comparator,1,diamonds,8
+Redstone Dust,1,diamonds,64
+Redstone Repeater,1,diamonds,8
+Redstone Torch,1,diamonds,32
+Rockets Flight Duration 1,1,diamonds,64
+Rockets Flight Duration 2,2,diamonds,64
+Rockets Flight Duration 3,3,diamonds,64
+Rotten Flesh,1,diamonds,64
+Saddle,5,diamonds,1
+Sand,1,diamonds,64
+Sandstone,3,diamonds,64
+Scaffolding,1,diamonds,64
+Sea Lantern,3,diamonds,64
+Shroomlight,1,diamonds,16
+Shulker Box,8,diamonds,1
+Slime Ball,1,diamonds,48
+Slime Block,10,diamonds,64
+Smooth Stone,1,diamonds,64
+Snow Ball,1,diamonds,128
+Snow Block,1,diamonds,128
+Snow Layer,1,diamonds,192
+Splash Potion of Weakness,1,diamonds,2
+Sponge,1,diamonds,16
+Steak,1,diamonds,64
+Sticky Piston,1,diamonds,8
+Stone,1,diamonds,192
+Stone Brick,2,diamonds,64
+String,1,diamonds,64
+Teracotta,2,diamonds,64
+Sugar Cane,1,diamonds,192
+TNT,4,diamonds,16
+Trident ,25,diamonds,1
+Twisting Vines,1,diamonds,64
+Totem of Undying,2,diamonds,1
+Warped Stem,2,diamonds,64
+Wither Rose,5,diamonds,64
+Wool,2,diamonds,64
+Soul lantern,2,diamonds,32
+Nautilus shell,2,diamonds,1
+Wither skeleton skull,25,diamonds,1
+Warped Fungus,1,diamonds,16
+Warped Roots,1,diamonds,128
+Crimson Fungus,2,diamonds,16
+Crimson Roots,1,diamonds,128
+Lead,1,diamonds,8
+Terracota,3,diamonds,64
+Quartz Block,2,diamonds,64
+Nether Quartz,1,diamonds,128
+Potion Of Slow Falling,32,lapis lazuli,3
+Potion Of Turtle Master,4,diamonds,3
+Potion Of Water Breathing,24,lapis lazuli,3
+Potion Of Fire Res,3,lapis lazuli,3
+Potion Of Regen,2,diamonds,3
+Potion of Healing,24,lapis lazuli,3
+Potion Of Strength,12,lapis lazuli,3
+Potion of leaping,1,diamonds,3
+Potion Of Poison,12,lapis lazuli,3
+Potion Of Night Vision,24,lapis lazuli,3
+Potion Of Swiftness,12,lapis lazuli,3
+Potion of Slowness,24,lapis lazuli,3
+Potion Of Invisibility,32,lapis lazuli,3
+Potion Of Harming,32,lapis lazuli,3
+Potion of Weakness,1,diamonds,3
+Crying Obsidian,4,diamonds,64

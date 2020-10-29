@@ -1,5 +1,6 @@
 # bot.py
 # Generic Import
+import csv
 import os
 from dotenv import load_dotenv
 
@@ -39,8 +40,17 @@ async def rules(ctx):
 
 @bot.command(name='price', help='responds with the price of an item')
 async def price(ctx, item):
+    print(item)
+    with open('sd_prices.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        print('Shopping Prices Opened')
+        for row in csv_reader:
+            if row[0] == item:
+                print(item.join('matched'))
+                print(f'{row[0]} costs {row[1]} {row[2]} per {row[3]}.')
+                cost = row[1]
 
-    await ctx.send(item)
+    await ctx.send(cost)
 
 
 # bot errors

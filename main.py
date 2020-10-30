@@ -44,11 +44,12 @@ async def price(ctx, item):
     with open('sd_prices.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         print('Shopping Prices Opened')
+        item = (item.capitalize())
+        print(item)
         for row in csv_reader:
             if row[0] == item:
-                print(item.join('matched'))
-                print(f'{row[0]} costs {row[1]} {row[2]} per {row[3]}.')
-                cost = row[1]
+                print(f'{row[0]} costs {row[1]} {row[2]} per {int(row[3])/64} stacks.')
+                cost = (f'{row[0]} costs {row[1]} {row[2]} per {int(row[3])/64} stacks.')
 
     await ctx.send(cost)
 

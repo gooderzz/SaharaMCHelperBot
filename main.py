@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 # Discord Imports
 import discord
 from discord.ext import commands
+from discord.ext import menus
 
 intents = discord.Intents.all()
 intents.members = True
@@ -63,8 +64,23 @@ async def price(ctx, *, item):
 async def apply(ctx):
     me = ctx.author
     print(me, 'is applying')
-    application_message = 'Hello!'
-    await me.send(embed=embedVar)
+    applicationReadyMessage = await me.send(embed=applicationReady)
+    await applicationReadyMessage.add_reaction(emoji="\U00002705")
+    await applicationReadyMessage.add_reaction(emoji="\U0000274C")
+
+    #Check for Reaction
+    await bot.wait_for('reaction_add', check=lambda reaction, user: reaction.emoji == '✅' or reaction.emoji == '❌')
+    reaction, user = await bot.wait_for('reaction_add', check=lambda reaction, user: reaction.emoji == '✅' or reaction.emoji == '❌')
+    print(reaction)
+    if reaction.emoji == '✅' and user == ctx.author:
+        await ctx.author.send("Application Next Steps....")
+    elif reaction.emoji == '❌' and user == ctx.author:
+        await ctx.author.send("Application Cancelled")
+
+@bot.command(name='apply2', help='apply to join the community', pass_context=True)
+async def menu_example(ctx):
+    m = MyMenu()
+    await m.start(ctx)
 
 # bot errors
 @bot.event
@@ -72,6 +88,11 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('You do not have the correct role for this command.')
 
+#Application Ready
+applicationReady = discord.Embed(title="Apply For SaharaMC Whitelist", description="Are you ready to apply for SaharaMC's Whitelist? (Use reaction to continue)", color=0x00ff00)
+applicationReady.add_field(name=":white_check_mark: Begin", value="Begin filling out the application", inline=True)
+applicationReady.add_field(name=":x: Cancel", value="Cancel the application", inline=True)
+applicationReady.set_footer(text="You can type cancel at any time to exit")
 
 #Application Creation
 embedVar = discord.Embed(title="Apply For SaharaMC Whitelist", description="This is the application for SaharaMC whitelist", color=0x00ff00)
@@ -86,6 +107,25 @@ embedVar.add_field(name="What will you bring to the community? if you have any g
 embedVar.add_field(name="How did you hear about us? If from a website, please enter the website name.", value="Hear about us", inline=True)
 embedVar.add_field(name="You do understand SaharaMC is built on trust and that is why we emphasize the importance of the rules. Have you completely read all of the rules? Enter yes or no?", value="Acceptance", inline=True)
 embedVar.add_field(name="What is SaharaMC's golden rule?", value="Golden Rule", inline=True)
+
+class MyMenu(menus.Menu):
+    async def send_initial_message(self, ctx, channel):
+        applicant = ctx.author
+        return await applicant.send(f'Hello {ctx.author}')
+
+    @menus.button('\N{THUMBS UP SIGN}')
+    async def on_thumbs_up(self, payload):
+        await self.message.edit(content=f'Thanks {self.ctx.author}!')
+
+    @menus.button('\N{THUMBS DOWN SIGN}')
+    async def on_thumbs_down(self, payload):
+        await self.message.edit(content=f"That's not nice {self.ctx.author}...")
+
+    @menus.button('\N{BLACK SQUARE FOR STOP}\ufe0f')
+    async def on_stop(self, payload):
+        self.stop()
+
+
 
 # bot run
 bot.run(TOKEN)
